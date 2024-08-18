@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct DriversListView: View {
-    @Environment(DriversAggregate.self) private var driversAggregate
-    //internal let inspection = Inspection<Self>()
-    
+    @Environment(DriversAggregate.self) internal var driversAggregate
+    internal let inspection = Inspection<Self>()
+
     @State var searchText = ""
     
     var filteredDrivers: [Driver] {
@@ -40,7 +40,7 @@ struct DriversListView: View {
         .task {
             await driversAggregate.fetchDrivers()
         }
-        //.onReceive(inspection.notice) { self.inspection.visit(self, $0) }
+        .onReceive(inspection.notice) { self.inspection.visit(self, $0) }
     }
     
     private var driversList: some View {

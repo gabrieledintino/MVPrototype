@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var driversAggregate = DriversAggregate()
+
     var body: some View {
         TabView {
             DriversListView()
@@ -20,6 +22,7 @@ struct ContentView: View {
                     Label("Favorites", systemImage: "star")
                 }
         }
+        .environment(driversAggregate)
     }
 }
 

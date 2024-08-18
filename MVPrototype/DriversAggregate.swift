@@ -13,6 +13,7 @@ import Foundation
     var isLoading = false
     var isLoadingRaces = false
     var errorMessage: String?
+    var errorMessageRaces: String?
     
     private let networkClient: NetworkClientProtocol
         
@@ -35,17 +36,16 @@ import Foundation
     
     func fetchRaceResults(driver: Driver) async -> [Race] {
         isLoadingRaces = true
-        errorMessage = nil
+        errorMessageRaces = nil
         
         do {
             let response = try await networkClient.fetchRaceResults(forDriver: driver.driverID)
             isLoadingRaces = false
             return response
         } catch {
-            errorMessage = error.localizedDescription
+            errorMessageRaces = error.localizedDescription
+            isLoadingRaces = false
+            return []
         }
-        
-        isLoadingRaces = false
-        return []
     }
 }

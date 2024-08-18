@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct MVPrototypeApp: App {
-    @State private var driversAggregate = DriversAggregate()
+    //@State private var driversAggregate = DriversAggregate()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(driversAggregate)
+                //.environment(driversAggregate)
         }
     }
 }

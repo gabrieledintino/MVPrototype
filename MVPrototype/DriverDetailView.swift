@@ -8,27 +8,16 @@
 import SwiftUI
 
 struct DriverDetailView: View {
-    @Environment(DriversAggregate.self) private var driversAggregate
+    @Environment(DriversAggregate.self) internal var driversAggregate
     @AppStorage("FavoriteDrivers") var favoriteIDs: [String] = []
 
     let driver: Driver
-    @State private var races: [Race] = []
+    @State internal var races: [Race] = []
     
     var isFavorite: Bool {
         favoriteIDs.contains(driver.driverID)
     }
-//    @State internal var viewModel: DriverDetailViewModel
-//    internal let inspection = Inspection<Self>()
-//
-//    init(driver: Driver, networkClient: NetworkClientProtocol = NetworkClient.shared, userDefaults: UserDefaults = .standard) {
-//        self.driver = driver
-//        _viewModel = State(initialValue: DriverDetailViewModel(driver: driver, networkClient: networkClient, userDefaults: userDefaults))
-//    }
-//    
-//    init(driver: Driver, viewModel: DriverDetailViewModel) {
-//        self.driver = driver
-//        _viewModel = State(wrappedValue: viewModel)
-//    }
+    internal let inspection = Inspection<Self>()
     
     var body: some View {
         List {
@@ -45,7 +34,7 @@ struct DriverDetailView: View {
                 if driversAggregate.isLoadingRaces {
                     ProgressView()
                         .accessibilityIdentifier("progress_view")
-                } else if let errorMessage = driversAggregate.errorMessage {
+                } else if let errorMessage = driversAggregate.errorMessageRaces {
                     ErrorView(message: errorMessage)
                         .accessibilityIdentifier("error_view")
                 } else if races.isEmpty {
@@ -73,7 +62,7 @@ struct DriverDetailView: View {
         .task {
             races = await driversAggregate.fetchRaceResults(driver: driver)
         }
-        //.onReceive(inspection.notice) { self.inspection.visit(self, $0) }
+        .onReceive(inspection.notice) { self.inspection.visit(self, $0) }
     }
     
     func toggleFavorite() {

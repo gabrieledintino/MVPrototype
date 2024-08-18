@@ -1,0 +1,43 @@
+{
+  "configurations" : [
+    {
+      "id" : "3A645568-F260-42E8-A049-9106481BC501",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "language" : "it",
+    "region" : "IT",
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MVPrototype.xcodeproj",
+        "identifier" : "4690D5C62C6E797B00B3E87D",
+        "name" : "MVPrototypeTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MVPrototype.xcodeproj",
+        "identifier" : "4624EC412C72A295004C542F",
+        "name" : "MVPrototypeIntegrationTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MVPrototype.xcodeproj",
+        "identifier" : "4690D5D02C6E797C00B3E87D",
+        "name" : "MVPrototypeUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

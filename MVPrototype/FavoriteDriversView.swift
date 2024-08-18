@@ -10,7 +10,7 @@ import SwiftUI
 struct FavoriteDriversView: View {
     @Environment(DriversAggregate.self) private var driversAggregate
     @AppStorage("FavoriteDrivers") var favoriteIDs: [String] = []
-    //internal let inspection = Inspection<Self>()
+    internal let inspection = Inspection<Self>()
     
     var favoriteDrivers: [Driver] {
         return driversAggregate.drivers.filter { favoriteIDs.contains($0.driverID) }
@@ -38,7 +38,7 @@ struct FavoriteDriversView: View {
         .task {
             await driversAggregate.fetchDrivers()
         }
-        //.onReceive(inspection.notice) { self.inspection.visit(self, $0) }
+        .onReceive(inspection.notice) { self.inspection.visit(self, $0) }
     }
     
     private var favoriteDriversList: some View {

@@ -7,11 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4624EC4D2C72A3BE004C542F /* DriversListViewIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4624EC4C2C72A3BE004C542F /* DriversListViewIntegrationTests.swift */; };
+		4624EC502C72A3F1004C542F /* Cuckoo in Frameworks */ = {isa = PBXBuildFile; productRef = 4624EC4F2C72A3F1004C542F /* Cuckoo */; };
+		4624EC522C72A3F4004C542F /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 4624EC512C72A3F4004C542F /* ViewInspector */; };
+		4624EC622C72A43B004C542F /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD434C2C70D7E100675B93 /* FileUtils.swift */; };
+		4624EC632C72A43B004C542F /* leclerc_results.json in Resources */ = {isa = PBXBuildFile; fileRef = 46BD43462C70D7C800675B93 /* leclerc_results.json */; };
+		4624EC642C72A43B004C542F /* Inspection-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD434B2C70D7E100675B93 /* Inspection-extension.swift */; };
+		4624EC652C72A43B004C542F /* drivers.json in Resources */ = {isa = PBXBuildFile; fileRef = 46BD43452C70D7C800675B93 /* drivers.json */; };
+		4624EC662C72A44A004C542F /* FavoriteDriversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43332C6FF3D700675B93 /* FavoriteDriversView.swift */; };
+		4624EC672C72A44A004C542F /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43232C6E84F700675B93 /* NetworkClient.swift */; };
+		4624EC682C72A44A004C542F /* CircuitListYearResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD432B2C6FEF1800675B93 /* CircuitListYearResponse.swift */; };
+		4624EC692C72A44A004C542F /* DriverDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43352C6FF59A00675B93 /* DriverDetailView.swift */; };
+		4624EC6A2C72A44A004C542F /* DriversListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43272C6FEEFA00675B93 /* DriversListView.swift */; };
+		4624EC6B2C72A44A004C542F /* Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD433A2C70D5C200675B93 /* Inspection.swift */; };
+		4624EC6C2C72A44A004C542F /* RaceResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD432C2C6FEF1800675B93 /* RaceResultResponse.swift */; };
+		4624EC6D2C72A44A004C542F /* DriversListYearResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD432D2C6FEF1800675B93 /* DriversListYearResponse.swift */; };
+		4624EC6E2C72A44A004C542F /* NetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43242C6E84F700675B93 /* NetworkClientProtocol.swift */; };
+		467D059E2C72AC0C007D903A /* DriversAggregate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43312C6FEF5700675B93 /* DriversAggregate.swift */; };
 		4690D5BB2C6E797800B3E87D /* MVPrototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4690D5BA2C6E797800B3E87D /* MVPrototypeApp.swift */; };
 		4690D5BD2C6E797800B3E87D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4690D5BC2C6E797800B3E87D /* ContentView.swift */; };
 		4690D5BF2C6E797B00B3E87D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4690D5BE2C6E797B00B3E87D /* Assets.xcassets */; };
 		4690D5C22C6E797B00B3E87D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4690D5C12C6E797B00B3E87D /* Preview Assets.xcassets */; };
-		4690D5CC2C6E797B00B3E87D /* MVPrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4690D5CB2C6E797B00B3E87D /* MVPrototypeTests.swift */; };
 		4690D5D62C6E797C00B3E87D /* MVPrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4690D5D52C6E797C00B3E87D /* MVPrototypeUITests.swift */; };
 		4690D5D82C6E797C00B3E87D /* MVPrototypeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4690D5D72C6E797C00B3E87D /* MVPrototypeUITestsLaunchTests.swift */; };
 		46BD43252C6E84F700675B93 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43232C6E84F700675B93 /* NetworkClient.swift */; };
@@ -24,9 +40,43 @@
 		46BD43342C6FF3D700675B93 /* FavoriteDriversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43332C6FF3D700675B93 /* FavoriteDriversView.swift */; };
 		46BD43362C6FF59A00675B93 /* DriverDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43352C6FF59A00675B93 /* DriverDetailView.swift */; };
 		46BD43382C70068600675B93 /* Array-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43372C70068600675B93 /* Array-Extensions.swift */; };
+		46BD433B2C70D5C200675B93 /* Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD433A2C70D5C200675B93 /* Inspection.swift */; };
+		46BD433E2C70D61000675B93 /* Cuckoo in Frameworks */ = {isa = PBXBuildFile; productRef = 46BD433D2C70D61000675B93 /* Cuckoo */; };
+		46BD43432C70D66800675B93 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 46BD43422C70D66800675B93 /* ViewInspector */; };
+		46BD43472C70D7C800675B93 /* drivers.json in Resources */ = {isa = PBXBuildFile; fileRef = 46BD43452C70D7C800675B93 /* drivers.json */; };
+		46BD43482C70D7C800675B93 /* leclerc_results.json in Resources */ = {isa = PBXBuildFile; fileRef = 46BD43462C70D7C800675B93 /* leclerc_results.json */; };
+		46BD434D2C70D7E100675B93 /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD434A2C70D7E100675B93 /* URLProtocolStub.swift */; };
+		46BD434E2C70D7E100675B93 /* Inspection-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD434B2C70D7E100675B93 /* Inspection-extension.swift */; };
+		46BD434F2C70D7E100675B93 /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD434C2C70D7E100675B93 /* FileUtils.swift */; };
+		46BD43662C70D82A00675B93 /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43552C70D82A00675B93 /* NetworkClientTests.swift */; };
+		46BD436C2C70D82A00675B93 /* DriversListViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD435E2C70D82A00675B93 /* DriversListViewUITests.swift */; };
+		46BD436D2C70D82A00675B93 /* FavoriteDriversViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD435F2C70D82A00675B93 /* FavoriteDriversViewUITests.swift */; };
+		46BD436E2C70D82A00675B93 /* DriverDetailViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43602C70D82A00675B93 /* DriverDetailViewUITests.swift */; };
+		46BD436F2C70D82A00675B93 /* RaceResultRowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43612C70D82A00675B93 /* RaceResultRowUITests.swift */; };
+		46BD43702C70D82A00675B93 /* InfoRowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43622C70D82A00675B93 /* InfoRowUITests.swift */; };
+		46BD43712C70D82A00675B93 /* ErrorViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43632C70D82A00675B93 /* ErrorViewUITests.swift */; };
+		46BD43732C70D82A00675B93 /* DriverRowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43652C70D82A00675B93 /* DriverRowUITests.swift */; };
+		46BD43742C70D85F00675B93 /* DriverDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43352C6FF59A00675B93 /* DriverDetailView.swift */; };
+		46BD43752C70D85F00675B93 /* Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD433A2C70D5C200675B93 /* Inspection.swift */; };
+		46BD43762C70D85F00675B93 /* DriversListYearResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD432D2C6FEF1800675B93 /* DriversListYearResponse.swift */; };
+		46BD43772C70D85F00675B93 /* CircuitListYearResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD432B2C6FEF1800675B93 /* CircuitListYearResponse.swift */; };
+		46BD43782C70D85F00675B93 /* RaceResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD432C2C6FEF1800675B93 /* RaceResultResponse.swift */; };
+		46BD43792C70D85F00675B93 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43232C6E84F700675B93 /* NetworkClient.swift */; };
+		46BD437A2C70D85F00675B93 /* DriversAggregate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43312C6FEF5700675B93 /* DriversAggregate.swift */; };
+		46BD437B2C70D85F00675B93 /* DriversListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43272C6FEEFA00675B93 /* DriversListView.swift */; };
+		46BD437C2C70D85F00675B93 /* NetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43242C6E84F700675B93 /* NetworkClientProtocol.swift */; };
+		46BD437D2C70D85F00675B93 /* FavoriteDriversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD43332C6FF3D700675B93 /* FavoriteDriversView.swift */; };
+		46BD43902C72445600675B93 /* DriversAggregateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD438F2C72445600675B93 /* DriversAggregateTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4624EC462C72A295004C542F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4690D5AF2C6E797800B3E87D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4690D5B62C6E797800B3E87D;
+			remoteInfo = MVPrototype;
+		};
 		4690D5C82C6E797B00B3E87D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4690D5AF2C6E797800B3E87D /* Project object */;
@@ -44,13 +94,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4624EC3D2C72A25E004C542F /* MVPrototype.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MVPrototype.xctestplan; sourceTree = "<group>"; };
+		4624EC422C72A295004C542F /* MVPrototypeIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPrototypeIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4624EC4C2C72A3BE004C542F /* DriversListViewIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversListViewIntegrationTests.swift; sourceTree = "<group>"; };
 		4690D5B72C6E797800B3E87D /* MVPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4690D5BA2C6E797800B3E87D /* MVPrototypeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPrototypeApp.swift; sourceTree = "<group>"; };
 		4690D5BC2C6E797800B3E87D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4690D5BE2C6E797B00B3E87D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4690D5C12C6E797B00B3E87D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4690D5C72C6E797B00B3E87D /* MVPrototypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPrototypeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4690D5CB2C6E797B00B3E87D /* MVPrototypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPrototypeTests.swift; sourceTree = "<group>"; };
 		4690D5D12C6E797C00B3E87D /* MVPrototypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPrototypeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4690D5D52C6E797C00B3E87D /* MVPrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPrototypeUITests.swift; sourceTree = "<group>"; };
 		4690D5D72C6E797C00B3E87D /* MVPrototypeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPrototypeUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -64,9 +116,33 @@
 		46BD43332C6FF3D700675B93 /* FavoriteDriversView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteDriversView.swift; sourceTree = "<group>"; };
 		46BD43352C6FF59A00675B93 /* DriverDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverDetailView.swift; sourceTree = "<group>"; };
 		46BD43372C70068600675B93 /* Array-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array-Extensions.swift"; sourceTree = "<group>"; };
+		46BD433A2C70D5C200675B93 /* Inspection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inspection.swift; sourceTree = "<group>"; };
+		46BD43452C70D7C800675B93 /* drivers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = drivers.json; sourceTree = "<group>"; };
+		46BD43462C70D7C800675B93 /* leclerc_results.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = leclerc_results.json; sourceTree = "<group>"; };
+		46BD434A2C70D7E100675B93 /* URLProtocolStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
+		46BD434B2C70D7E100675B93 /* Inspection-extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Inspection-extension.swift"; sourceTree = "<group>"; };
+		46BD434C2C70D7E100675B93 /* FileUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
+		46BD43552C70D82A00675B93 /* NetworkClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
+		46BD435E2C70D82A00675B93 /* DriversListViewUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriversListViewUITests.swift; sourceTree = "<group>"; };
+		46BD435F2C70D82A00675B93 /* FavoriteDriversViewUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteDriversViewUITests.swift; sourceTree = "<group>"; };
+		46BD43602C70D82A00675B93 /* DriverDetailViewUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverDetailViewUITests.swift; sourceTree = "<group>"; };
+		46BD43612C70D82A00675B93 /* RaceResultRowUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaceResultRowUITests.swift; sourceTree = "<group>"; };
+		46BD43622C70D82A00675B93 /* InfoRowUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoRowUITests.swift; sourceTree = "<group>"; };
+		46BD43632C70D82A00675B93 /* ErrorViewUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorViewUITests.swift; sourceTree = "<group>"; };
+		46BD43652C70D82A00675B93 /* DriverRowUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverRowUITests.swift; sourceTree = "<group>"; };
+		46BD438F2C72445600675B93 /* DriversAggregateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversAggregateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4624EC3F2C72A295004C542F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4624EC502C72A3F1004C542F /* Cuckoo in Frameworks */,
+				4624EC522C72A3F4004C542F /* ViewInspector in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4690D5B42C6E797800B3E87D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,6 +154,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46BD433E2C70D61000675B93 /* Cuckoo in Frameworks */,
+				46BD43432C70D66800675B93 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,13 +169,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4624EC432C72A295004C542F /* MVPrototypeIntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				4624EC4B2C72A2EE004C542F /* UI Integration Tests */,
+			);
+			path = MVPrototypeIntegrationTests;
+			sourceTree = "<group>";
+		};
+		4624EC4B2C72A2EE004C542F /* UI Integration Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4624EC4C2C72A3BE004C542F /* DriversListViewIntegrationTests.swift */,
+			);
+			path = "UI Integration Tests";
+			sourceTree = "<group>";
+		};
+		4624EC4E2C72A3F1004C542F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4690D5AE2C6E797800B3E87D = {
 			isa = PBXGroup;
 			children = (
+				4624EC3D2C72A25E004C542F /* MVPrototype.xctestplan */,
 				4690D5B92C6E797800B3E87D /* MVPrototype */,
-				4690D5CA2C6E797B00B3E87D /* MVPrototypeTests */,
+				4690D5CA2C6E797B00B3E87D /* MVPrototypeUnitTests */,
+				4624EC432C72A295004C542F /* MVPrototypeIntegrationTests */,
 				4690D5D42C6E797C00B3E87D /* MVPrototypeUITests */,
 				4690D5B82C6E797800B3E87D /* Products */,
+				4624EC4E2C72A3F1004C542F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +211,7 @@
 				4690D5B72C6E797800B3E87D /* MVPrototype.app */,
 				4690D5C72C6E797B00B3E87D /* MVPrototypeTests.xctest */,
 				4690D5D12C6E797C00B3E87D /* MVPrototypeUITests.xctest */,
+				4624EC422C72A295004C542F /* MVPrototypeIntegrationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +219,7 @@
 		4690D5B92C6E797800B3E87D /* MVPrototype */ = {
 			isa = PBXGroup;
 			children = (
+				46BD43392C70D5C200675B93 /* Testing */,
 				46BD43352C6FF59A00675B93 /* DriverDetailView.swift */,
 				46BD43332C6FF3D700675B93 /* FavoriteDriversView.swift */,
 				46BD43272C6FEEFA00675B93 /* DriversListView.swift */,
@@ -137,12 +243,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		4690D5CA2C6E797B00B3E87D /* MVPrototypeTests */ = {
+		4690D5CA2C6E797B00B3E87D /* MVPrototypeUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				4690D5CB2C6E797B00B3E87D /* MVPrototypeTests.swift */,
+				46BD43532C70D82A00675B93 /* Unit Tests */,
+				46BD43442C70D7C800675B93 /* Files */,
+				46BD43492C70D7E100675B93 /* Utils */,
 			);
-			path = MVPrototypeTests;
+			path = MVPrototypeUnitTests;
 			sourceTree = "<group>";
 		};
 		4690D5D42C6E797C00B3E87D /* MVPrototypeUITests */ = {
@@ -181,9 +289,107 @@
 			path = "API Response";
 			sourceTree = "<group>";
 		};
+		46BD43392C70D5C200675B93 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				46BD433A2C70D5C200675B93 /* Inspection.swift */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
+		46BD43442C70D7C800675B93 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				46BD43452C70D7C800675B93 /* drivers.json */,
+				46BD43462C70D7C800675B93 /* leclerc_results.json */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		46BD43492C70D7E100675B93 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				46BD434A2C70D7E100675B93 /* URLProtocolStub.swift */,
+				46BD434B2C70D7E100675B93 /* Inspection-extension.swift */,
+				46BD434C2C70D7E100675B93 /* FileUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		46BD43532C70D82A00675B93 /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				46BD43542C70D82A00675B93 /* Network Tests */,
+				46BD43562C70D82A00675B93 /* Aggregate Tests */,
+				46BD435C2C70D82A00675B93 /* UI Unit Tests */,
+			);
+			path = "Unit Tests";
+			sourceTree = "<group>";
+		};
+		46BD43542C70D82A00675B93 /* Network Tests */ = {
+			isa = PBXGroup;
+			children = (
+				46BD43552C70D82A00675B93 /* NetworkClientTests.swift */,
+			);
+			path = "Network Tests";
+			sourceTree = "<group>";
+		};
+		46BD43562C70D82A00675B93 /* Aggregate Tests */ = {
+			isa = PBXGroup;
+			children = (
+				46BD438F2C72445600675B93 /* DriversAggregateTests.swift */,
+			);
+			path = "Aggregate Tests";
+			sourceTree = "<group>";
+		};
+		46BD435C2C70D82A00675B93 /* UI Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				46BD435D2C70D82A00675B93 /* Main views */,
+				46BD43612C70D82A00675B93 /* RaceResultRowUITests.swift */,
+				46BD43622C70D82A00675B93 /* InfoRowUITests.swift */,
+				46BD43632C70D82A00675B93 /* ErrorViewUITests.swift */,
+				46BD43652C70D82A00675B93 /* DriverRowUITests.swift */,
+			);
+			path = "UI Unit Tests";
+			sourceTree = "<group>";
+		};
+		46BD435D2C70D82A00675B93 /* Main views */ = {
+			isa = PBXGroup;
+			children = (
+				46BD435E2C70D82A00675B93 /* DriversListViewUITests.swift */,
+				46BD435F2C70D82A00675B93 /* FavoriteDriversViewUITests.swift */,
+				46BD43602C70D82A00675B93 /* DriverDetailViewUITests.swift */,
+			);
+			path = "Main views";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4624EC412C72A295004C542F /* MVPrototypeIntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4624EC482C72A295004C542F /* Build configuration list for PBXNativeTarget "MVPrototypeIntegrationTests" */;
+			buildPhases = (
+				4624EC3E2C72A295004C542F /* Sources */,
+				4624EC3F2C72A295004C542F /* Frameworks */,
+				4624EC402C72A295004C542F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				467D05A12C72AD11007D903A /* PBXTargetDependency */,
+				4624EC472C72A295004C542F /* PBXTargetDependency */,
+			);
+			name = MVPrototypeIntegrationTests;
+			packageProductDependencies = (
+				4624EC4F2C72A3F1004C542F /* Cuckoo */,
+				4624EC512C72A3F4004C542F /* ViewInspector */,
+			);
+			productName = MVPrototypeIntegrationTests;
+			productReference = 4624EC422C72A295004C542F /* MVPrototypeIntegrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4690D5B62C6E797800B3E87D /* MVPrototype */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4690D5DB2C6E797C00B3E87D /* Build configuration list for PBXNativeTarget "MVPrototype" */;
@@ -212,9 +418,14 @@
 			buildRules = (
 			);
 			dependencies = (
+				46BD43402C70D62C00675B93 /* PBXTargetDependency */,
 				4690D5C92C6E797B00B3E87D /* PBXTargetDependency */,
 			);
 			name = MVPrototypeTests;
+			packageProductDependencies = (
+				46BD433D2C70D61000675B93 /* Cuckoo */,
+				46BD43422C70D66800675B93 /* ViewInspector */,
+			);
 			productName = MVPrototypeTests;
 			productReference = 4690D5C72C6E797B00B3E87D /* MVPrototypeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -247,6 +458,11 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					4624EC412C72A295004C542F = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+						TestTargetID = 4690D5B62C6E797800B3E87D;
+					};
 					4690D5B62C6E797800B3E87D = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -269,18 +485,32 @@
 				Base,
 			);
 			mainGroup = 4690D5AE2C6E797800B3E87D;
+			packageReferences = (
+				46BD433C2C70D61000675B93 /* XCRemoteSwiftPackageReference "Cuckoo" */,
+				46BD43412C70D66800675B93 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = 4690D5B82C6E797800B3E87D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				4690D5B62C6E797800B3E87D /* MVPrototype */,
 				4690D5C62C6E797B00B3E87D /* MVPrototypeTests */,
+				4624EC412C72A295004C542F /* MVPrototypeIntegrationTests */,
 				4690D5D02C6E797C00B3E87D /* MVPrototypeUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4624EC402C72A295004C542F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4624EC632C72A43B004C542F /* leclerc_results.json in Resources */,
+				4624EC652C72A43B004C542F /* drivers.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4690D5B52C6E797800B3E87D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,6 +524,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46BD43472C70D7C800675B93 /* drivers.json in Resources */,
+				46BD43482C70D7C800675B93 /* leclerc_results.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +539,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4624EC3E2C72A295004C542F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4624EC6C2C72A44A004C542F /* RaceResultResponse.swift in Sources */,
+				467D059E2C72AC0C007D903A /* DriversAggregate.swift in Sources */,
+				4624EC692C72A44A004C542F /* DriverDetailView.swift in Sources */,
+				4624EC642C72A43B004C542F /* Inspection-extension.swift in Sources */,
+				4624EC6D2C72A44A004C542F /* DriversListYearResponse.swift in Sources */,
+				4624EC682C72A44A004C542F /* CircuitListYearResponse.swift in Sources */,
+				4624EC6E2C72A44A004C542F /* NetworkClientProtocol.swift in Sources */,
+				4624EC672C72A44A004C542F /* NetworkClient.swift in Sources */,
+				4624EC4D2C72A3BE004C542F /* DriversListViewIntegrationTests.swift in Sources */,
+				4624EC662C72A44A004C542F /* FavoriteDriversView.swift in Sources */,
+				4624EC6A2C72A44A004C542F /* DriversListView.swift in Sources */,
+				4624EC6B2C72A44A004C542F /* Inspection.swift in Sources */,
+				4624EC622C72A43B004C542F /* FileUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4690D5B32C6E797800B3E87D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -317,6 +569,7 @@
 				46BD432E2C6FEF1800675B93 /* CircuitListYearResponse.swift in Sources */,
 				46BD43362C6FF59A00675B93 /* DriverDetailView.swift in Sources */,
 				46BD43322C6FEF5700675B93 /* DriversAggregate.swift in Sources */,
+				46BD433B2C70D5C200675B93 /* Inspection.swift in Sources */,
 				46BD43302C6FEF1800675B93 /* DriversListYearResponse.swift in Sources */,
 				46BD43262C6E84F700675B93 /* NetworkClientProtocol.swift in Sources */,
 				4690D5BB2C6E797800B3E87D /* MVPrototypeApp.swift in Sources */,
@@ -330,7 +583,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4690D5CC2C6E797B00B3E87D /* MVPrototypeTests.swift in Sources */,
+				46BD437A2C70D85F00675B93 /* DriversAggregate.swift in Sources */,
+				46BD436F2C70D82A00675B93 /* RaceResultRowUITests.swift in Sources */,
+				46BD43732C70D82A00675B93 /* DriverRowUITests.swift in Sources */,
+				46BD43782C70D85F00675B93 /* RaceResultResponse.swift in Sources */,
+				46BD43762C70D85F00675B93 /* DriversListYearResponse.swift in Sources */,
+				46BD437C2C70D85F00675B93 /* NetworkClientProtocol.swift in Sources */,
+				46BD43712C70D82A00675B93 /* ErrorViewUITests.swift in Sources */,
+				46BD436E2C70D82A00675B93 /* DriverDetailViewUITests.swift in Sources */,
+				46BD43742C70D85F00675B93 /* DriverDetailView.swift in Sources */,
+				46BD43662C70D82A00675B93 /* NetworkClientTests.swift in Sources */,
+				46BD43752C70D85F00675B93 /* Inspection.swift in Sources */,
+				46BD43702C70D82A00675B93 /* InfoRowUITests.swift in Sources */,
+				46BD43792C70D85F00675B93 /* NetworkClient.swift in Sources */,
+				46BD434E2C70D7E100675B93 /* Inspection-extension.swift in Sources */,
+				46BD437B2C70D85F00675B93 /* DriversListView.swift in Sources */,
+				46BD436C2C70D82A00675B93 /* DriversListViewUITests.swift in Sources */,
+				46BD43772C70D85F00675B93 /* CircuitListYearResponse.swift in Sources */,
+				46BD436D2C70D82A00675B93 /* FavoriteDriversViewUITests.swift in Sources */,
+				46BD434D2C70D7E100675B93 /* URLProtocolStub.swift in Sources */,
+				46BD434F2C70D7E100675B93 /* FileUtils.swift in Sources */,
+				46BD43902C72445600675B93 /* DriversAggregateTests.swift in Sources */,
+				46BD437D2C70D85F00675B93 /* FavoriteDriversView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +620,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4624EC472C72A295004C542F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4690D5B62C6E797800B3E87D /* MVPrototype */;
+			targetProxy = 4624EC462C72A295004C542F /* PBXContainerItemProxy */;
+		};
+		467D05A12C72AD11007D903A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 467D05A02C72AD11007D903A /* CuckooPluginSingleFile */;
+		};
 		4690D5C92C6E797B00B3E87D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4690D5B62C6E797800B3E87D /* MVPrototype */;
@@ -356,9 +639,52 @@
 			target = 4690D5B62C6E797800B3E87D /* MVPrototype */;
 			targetProxy = 4690D5D22C6E797C00B3E87D /* PBXContainerItemProxy */;
 		};
+		46BD43402C70D62C00675B93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 46BD433F2C70D62C00675B93 /* CuckooPluginSingleFile */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		4624EC492C72A295004C542F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9L5Q35JV6A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrieledintino.MVPrototypeIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVPrototype.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MVPrototype";
+			};
+			name = Debug;
+		};
+		4624EC4A2C72A295004C542F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9L5Q35JV6A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrieledintino.MVPrototypeIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVPrototype.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MVPrototype";
+			};
+			name = Release;
+		};
 		4690D5D92C6E797C00B3E87D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -615,6 +941,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4624EC482C72A295004C542F /* Build configuration list for PBXNativeTarget "MVPrototypeIntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4624EC492C72A295004C542F /* Debug */,
+				4624EC4A2C72A295004C542F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4690D5B22C6E797800B3E87D /* Build configuration list for PBXProject "MVPrototype" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -652,6 +987,58 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		46BD433C2C70D61000675B93 /* XCRemoteSwiftPackageReference "Cuckoo" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Brightify/Cuckoo.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.9;
+			};
+		};
+		46BD43412C70D66800675B93 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4624EC4F2C72A3F1004C542F /* Cuckoo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46BD433C2C70D61000675B93 /* XCRemoteSwiftPackageReference "Cuckoo" */;
+			productName = Cuckoo;
+		};
+		4624EC512C72A3F4004C542F /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46BD43412C70D66800675B93 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+		467D05A02C72AD11007D903A /* CuckooPluginSingleFile */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46BD433C2C70D61000675B93 /* XCRemoteSwiftPackageReference "Cuckoo" */;
+			productName = "plugin:CuckooPluginSingleFile";
+		};
+		46BD433D2C70D61000675B93 /* Cuckoo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46BD433C2C70D61000675B93 /* XCRemoteSwiftPackageReference "Cuckoo" */;
+			productName = Cuckoo;
+		};
+		46BD433F2C70D62C00675B93 /* CuckooPluginSingleFile */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46BD433C2C70D61000675B93 /* XCRemoteSwiftPackageReference "Cuckoo" */;
+			productName = "plugin:CuckooPluginSingleFile";
+		};
+		46BD43422C70D66800675B93 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46BD43412C70D66800675B93 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4690D5AF2C6E797800B3E87D /* Project object */;
 }
