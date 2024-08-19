@@ -10,7 +10,6 @@ import Foundation
 import Foundation
 
 enum APIError: Error, Equatable {
-    case invalidURL
     case decodingError
     case networkError
 }

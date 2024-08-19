@@ -1,17 +1,14 @@
 //
-//  DriverDetailViewUITests.swift
-//  MVVMPrototypeTests
+//  DriverDetailViewIntegrationTests.swift
+//  MVPrototypeIntegrationTests
 //
-//  Created by Gabriele D'intino (EXT) on 12/08/24.
+//  Created by Gabriele D'Intino on 19/08/24.
 //
 
 import XCTest
 import ViewInspector
-@testable import MVPrototype
-import SwiftUI
-import Cuckoo
 
-final class DriverDetailViewUITests: XCTestCase {
+final class DriverDetailViewIntegrationTests: XCTestCase {
     var drivers: [Driver]!
     var driverResponse: DriversListYearResponse!
     var raceResults: [Race]!
@@ -88,58 +85,14 @@ final class DriverDetailViewUITests: XCTestCase {
         wait(for: [exp], timeout: 0.9)
     }
     
-    func testSectionTitlesAreCorrect() throws {
+    func testResultRowIsRendered() throws {
         let exp = sut.inspection.inspect() { view in
-            XCTAssertEqual(try view.list().section(0).header().text(0).string(), "Driver Information")
-            XCTAssertEqual(try view.list().section(1).header().text(0).string(), "Race Results for current season")
+            try view.actualView().races = [self.raceResults[0]]
+            XCTAssertNoThrow(try view.list().section(1).forEach(0).view(RaceResultRow.self, 0))
+            XCTAssertThrowsError(try view.list().section(1).forEach(0).view(RaceResultRow.self, 1))
         }
         ViewHosting.host(view: sut.environment(originalDriversAggreggate))
         wait(for: [exp], timeout: 0.1)
     }
-    
-    func testAllInfoRowsAreRendered() throws {
-        let exp = sut.inspection.inspect() { view in
-            XCTAssertEqual(try view.list().section(0).count, 4)
-        }
-        ViewHosting.host(view: sut.environment(originalDriversAggreggate))
-        wait(for: [exp], timeout: 0.9)
-    }
-    
-    func testToggleFavorite() throws {
-        sut.favoriteIDs = []
-        
-        let exp1 = sut.inspection.inspect() { view in
-            let button = try view.list().toolbar().item(0).button()
-            try button.tap()
-            XCTAssertEqual(self.sut.favoriteIDs, [self.drivers.first!.driverID])
-            XCTAssertTrue(self.sut.isFavorite)
-        }
 
-        let exp2 = sut.inspection.inspect() { view in
-            let button = try view.list().toolbar().item(0).button()
-            try button.tap()
-            XCTAssertEqual(self.sut.favoriteIDs, [])
-            XCTAssertFalse(self.sut.isFavorite)
-        }
-        ViewHosting.host(view: sut.environment(originalDriversAggreggate))
-        wait(for: [exp1, exp2], timeout: 3)
-    }
-    
-    func testButtonTapChangeIcon() throws {
-        sut.favoriteIDs = []
-        
-        let exp1 = sut.inspection.inspect() { view in
-            let button = try view.list().toolbar().item(0).button()
-            XCTAssertEqual(try button.labelView().image().actualImage().name(), "star")
-            try button.tap()
-            self.sut.favoriteIDs = [self.drivers.first!.driverID]
-        }
-
-        let exp2 = sut.inspection.inspect() { view in
-            let button = try view.list().toolbar().item(0).button()
-            XCTAssertEqual(try button.labelView().image().actualImage().name(), "star.fill")
-        }
-        ViewHosting.host(view: sut.environment(originalDriversAggreggate))
-        wait(for: [exp1, exp2], timeout: 3)
-    }
 }
