@@ -42,7 +42,7 @@ struct DriverTable: Codable {
 }
 
 // MARK: - Driver
-struct Driver: Codable, Equatable {
+struct Driver: Codable, Equatable, Hashable {
     let driverID, permanentNumber, code: String
     let url: String
     let givenName, familyName, dateOfBirth, nationality: String

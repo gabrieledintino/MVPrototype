@@ -22,7 +22,7 @@ struct DriversListView: View {
     }
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 if driversAggregate.isLoading {
                     ProgressView()
@@ -35,6 +35,9 @@ struct DriversListView: View {
                 }
             }
             .navigationTitle("F1 Drivers")
+            .navigationDestination(for: Driver.self) { driver in
+                DriverDetailView(driver: driver)
+            }
         }
         .searchable(text: $searchText, prompt: "Search drivers")
         .task {
@@ -45,7 +48,7 @@ struct DriversListView: View {
     
     private var driversList: some View {
         List(filteredDrivers, id: \.driverID) { driver in
-            NavigationLink(destination: DriverDetailView(driver: driver)) {
+            NavigationLink(value: driver) {
                 DriverRow(driver: driver)
                     .accessibilityIdentifier("DriverCell_\(driver.driverID)")
             }

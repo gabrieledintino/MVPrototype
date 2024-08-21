@@ -58,12 +58,33 @@ final class DriversListViewIntegrationTests: XCTestCase {
         let exp = sut.inspection.inspect() { view in
             XCTAssertThrowsError(try view.find(viewWithAccessibilityIdentifier: "progress_view"))
             XCTAssertFalse(try view.find(viewWithAccessibilityIdentifier: "error_view").isHidden())
-            XCTAssertEqual(try view.navigationView().zStack().view(ErrorView.self, 0).vStack().image(0).actualImage().name(), "exclamationmark.triangle")
-            XCTAssertEqual(try view.navigationView().zStack().view(ErrorView.self, 0).vStack().text(1).string(), "Error")
-            XCTAssertEqual(try view.navigationView().zStack().view(ErrorView.self, 0).vStack().text(2).string(), "Test error")
+            XCTAssertEqual(try view.navigationStack().zStack().view(ErrorView.self, 0).vStack().image(0).actualImage().name(), "exclamationmark.triangle")
+            XCTAssertEqual(try view.navigationStack().zStack().view(ErrorView.self, 0).vStack().text(1).string(), "Error")
+            XCTAssertEqual(try view.navigationStack().zStack().view(ErrorView.self, 0).vStack().text(2).string(), "Test error")
             XCTAssertThrowsError(try view.find(viewWithAccessibilityIdentifier: "list_view"))
         }
         ViewHosting.host(view: sut.environment(originalDriversAggreggate))
         wait(for: [exp], timeout: 0.1)
+    }
+    
+    func testDriverListIsShownAndOthersHidden() throws {
+        let exp = sut.inspection.inspect(after: 5.0) { view in
+            XCTAssertThrowsError(try view.find(viewWithAccessibilityIdentifier: "progress_view"))
+            XCTAssertThrowsError(try view.find(viewWithAccessibilityIdentifier: "error_view"))
+            XCTAssertFalse(try view.find(viewWithAccessibilityIdentifier: "list_view").isHidden())
+        }
+        ViewHosting.host(view: sut.environment(originalDriversAggreggate))
+        wait(for: [exp], timeout: 5.0)
+    }
+    
+    func testDriverRowIsRenderedCorrectly() throws {
+        let exp = sut.inspection.inspect(after: 5.0) { view in
+            XCTAssertEqual(try view.navigationStack().zStack().list(0).forEach(0).navigationLink(0).labelView().view(DriverRow.self).vStack().text(0).string(), "Alexander Albon")
+            XCTAssertEqual(try view.navigationStack().zStack().list(0).forEach(0).navigationLink(0).labelView().view(DriverRow.self).vStack().text(1).string(), "Thai")
+            XCTAssertEqual(try view.navigationStack().zStack().list(0).forEach(0).navigationLink(1).labelView().view(DriverRow.self).vStack().text(0).string(), "Fernando Alonso")
+            XCTAssertEqual(try view.navigationStack().zStack().list(0).forEach(0).navigationLink(1).labelView().view(DriverRow.self).vStack().text(1).string(), "Spanish")
+        }
+        ViewHosting.host(view: sut.environment(originalDriversAggreggate))
+        wait(for: [exp], timeout: 5.0)
     }
 }

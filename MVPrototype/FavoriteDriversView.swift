@@ -17,7 +17,7 @@ struct FavoriteDriversView: View {
     }
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 if driversAggregate.isLoading {
                     ProgressView()
@@ -34,6 +34,9 @@ struct FavoriteDriversView: View {
                 }
             }
             .navigationTitle("Favorite Drivers")
+            .navigationDestination(for: Driver.self) { driver in
+                DriverDetailView(driver: driver)
+            }
         }
         .task {
             await driversAggregate.fetchDrivers()
@@ -44,7 +47,7 @@ struct FavoriteDriversView: View {
     private var favoriteDriversList: some View {
         List {
             ForEach(favoriteDrivers, id: \.driverID) { driver in
-                NavigationLink(destination: DriverDetailView(driver: driver)) {
+                NavigationLink(value: driver) {
                     DriverRow(driver: driver)
                 }
             }

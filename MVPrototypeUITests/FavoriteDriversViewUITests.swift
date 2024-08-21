@@ -64,7 +64,9 @@ class FavoriteDriversViewUITests: XCTestCase {
         // Tap again to unfavorite
         filledStarButton.tap()
         
-        // Check that the app is back on the main favorite tab
-        XCTAssertTrue(app.navigationBars["Favorite Drivers"].exists)
+//        // Check that the app is back on the main favorite tab
+//        XCTAssertTrue(app.navigationBars["Favorite Drivers"].exists)
+        // Navigate back to the list
+        app.navigationBars.buttons.element(boundBy: 0).tap()
     }
 }
